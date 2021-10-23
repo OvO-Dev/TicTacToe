@@ -131,7 +131,8 @@ function setMark(field, element) {
 
     if(gameData.currentPlayer === "x"){
         gameData.currentPlayer = "o"
-    } else {
+    }
+    if(gameData.currentPlayer === "o") {
         gameData.currentPlayer = "x"
     }
 }

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="asstes/plugins/bs/css/bootstrap.css">
+    <link rel="stylesheet" href="asstes/css/index.css">
+
+    <title>TicTacToe</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1 class="text-center">TicTacToe</h1>
+
+      <div id="startScreen" class="text-center">
+        <p>Drück den Knopf zum starten!</p>
+
+        <button class="btn btn-primary" onclick="start()">Start</button>
+      </div>
+
+      <div id="playScreen" class="text-center d-none">
+        <div id="endScreen" class="d-none">
+          <h3 style="color: green"><b><span id="winner"></span></b> hat das Spiel gewonnen!</h3>
+        </div>
+        <br>
+        <h3 id="curH"><b><span id="currentPlayer"></span></b> ist dran!</h3>
+        <br>
+        <table class="table-bordered table">
+          <tr>
+            <td onclick="setMark(0, this)" id="f_1" data-locked="false"><img class="fieldPic" /></td>
+            <td onclick="setMark(1, this)" id="f_2" data-locked="false"><img class="fieldPic" /></td>
+            <td onclick="setMark(2, this)" id="f_3" data-locked="false"><img class="fieldPic" /></td>
+          </tr>
+          <tr>
+            <td onclick="setMark(3, this)" id="f_4" data-locked="false"><img class="fieldPic" /></td>
+            <td onclick="setMark(4, this)" id="f_5" data-locked="false"><img class="fieldPic" /></td>
+            <td onclick="setMark(5, this)" id="f_6" data-locked="false"><img class="fieldPic" /></td>
+          </tr>
+          <tr>
+            <td onclick="setMark(6, this)" id="f_7" data-locked="false"><img class="fieldPic" /></td>
+            <td onclick="setMark(7, this)" id="f_8" data-locked="false"><img class="fieldPic" /></td>
+            <td onclick="setMark(8, this)" id="f_9" data-locked="false"><img class="fieldPic" /></td>
+          </tr>
+        </table>
+
+      </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="asstes/plugins/bs/js/bootstrap.js" ></script>
+    <script src="asstes/js/index.js"></script>
+  </body>
+</html>
